@@ -1,0 +1,2044 @@
+[00:00:02.775] Server  LOG      ✓ Ready in 1643ms
+[00:00:12.031] Server  LOG      ○ Compiling / ...
+[00:00:24.230] Browser ERROR   {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"productId\":\"prod_headphones\",\"country\":\"IN\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"http://localhost:4000/api/checkout/create-session","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:2469:167)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:3273:49)\n    at async buy (http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__5ddef2ae._.js:520:26)","status":500}
+[00:08:17.434] Server  LOG      ✓ Compiled in 197ms
+[00:08:18.138] Browser LOG     Refreshing page data due to server-side change
+[00:08:18.139] Browser ERROR   ./pages/index.tsx:44:42
+Parsing ecmascript source code failed
+  42 |       </div>
+  43 |
+> 44 |       <div style={{ display: 'grid', bac gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16 }}>
+     |                                          ^^^^^^^^^^^^^^^^^^^
+  45 |         {products.map((p) => (
+  46 |           <ProductCard key={p.id} product={p} country={country} />
+  47 |         ))}
+
+Expected '</', got 'gridTemplateColumns'
+[00:08:18.139] Browser ERROR   ./pages/index.tsx
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/pages/index.tsx [ssr] (ecmascript)
+
+Caused by:
+- CJS module can't be async.
+
+Debug info:
+- An error occurred while generating the chunk item [project]/pages/index.tsx [ssr] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of EcmascriptChunkItemContent::new failed
+- CJS module can't be async.
+[00:08:19.127] Browser ERROR   ./pages/index.tsx:44:43
+Parsing ecmascript source code failed
+  42 |       </div>
+  43 |
+> 44 |       <div style={{ display: 'grid', back gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16 }}>
+     |                                           ^^^^^^^^^^^^^^^^^^^
+  45 |         {products.map((p) => (
+  46 |           <ProductCard key={p.id} product={p} country={country} />
+  47 |         ))}
+
+Expected '</', got 'gridTemplateColumns'
+[00:08:19.127] Browser ERROR   ./pages/index.tsx
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/pages/index.tsx [ssr] (ecmascript)
+
+Caused by:
+- CJS module can't be async.
+
+Debug info:
+- An error occurred while generating the chunk item [project]/pages/index.tsx [ssr] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of EcmascriptChunkItemContent::new failed
+- CJS module can't be async.
+[00:08:21.142] Browser ERROR   ./pages/index.tsx:44:49
+Parsing ecmascript source code failed
+  42 |       </div>
+  43 |
+> 44 |       <div style={{ display: 'grid', background gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: 16 }}>
+     |                                                 ^^^^^^^^^^^^^^^^^^^
+  45 |         {products.map((p) => (
+  46 |           <ProductCard key={p.id} product={p} country={country} />
+  47 |         ))}
+
+Expected '</', got 'gridTemplateColumns'
+[00:08:21.143] Browser ERROR   ./pages/index.tsx
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/pages/index.tsx [ssr] (ecmascript)
+
+Caused by:
+- CJS module can't be async.
+
+Debug info:
+- An error occurred while generating the chunk item [project]/pages/index.tsx [ssr] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of EcmascriptChunkItemContent::new failed
+- CJS module can't be async.
+[00:08:22.021] Server  LOG      ✓ Compiled in 26ms
+[00:08:22.142] Browser LOG     Refreshing page data due to server-side change
+[00:08:34.018] Server  LOG      ✓ Compiled in 19ms
+[00:08:53.633] Server  LOG      ✓ Compiled in 62ms
+[00:08:54.141] Browser ERROR   ./components/ProductCard.tsx:29:50
+Parsing ecmascript source code failed
+  27 |
+  28 |   return (
+> 29 |     <div style={{ border: '1px solid #ddd', back padding: 16, borderRadius: 8 }}>
+     |                                                  ^^^^^^^
+  30 |       <img src={product.image} alt={product.name} width={240} />
+  31 |       <h3>{product.name}</h3>
+  32 |       <p>{product.description}</p>
+
+Unexpected token `padding`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+[00:08:54.141] Browser ERROR   ./components/ProductCard.tsx
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/components/ProductCard.tsx [ssr] (ecmascript)
+
+Caused by:
+- CJS module can't be async.
+
+Debug info:
+- An error occurred while generating the chunk item [project]/components/ProductCard.tsx [ssr] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of EcmascriptChunkItemContent::new failed
+- CJS module can't be async.
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+[00:08:56.134] Browser ERROR   ./components/ProductCard.tsx:29:56
+Parsing ecmascript source code failed
+  27 |
+  28 |   return (
+> 29 |     <div style={{ border: '1px solid #ddd', background padding: 16, borderRadius: 8 }}>
+     |                                                        ^^^^^^^
+  30 |       <img src={product.image} alt={product.name} width={240} />
+  31 |       <h3>{product.name}</h3>
+  32 |       <p>{product.description}</p>
+
+Unexpected token `padding`. Expected ... , *,  (, [, :, , ?, =, an identifier, public, protected, private, readonly, <.
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+[00:08:56.134] Browser ERROR   ./components/ProductCard.tsx
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/components/ProductCard.tsx [ssr] (ecmascript)
+
+Caused by:
+- CJS module can't be async.
+
+Debug info:
+- An error occurred while generating the chunk item [project]/components/ProductCard.tsx [ssr] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of EcmascriptChunkItemContent::new failed
+- CJS module can't be async.
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+[00:08:57.089] Server  LOG      ✓ Compiled in 38ms
+[00:09:07.636] Server  LOG      ✓ Compiled in 25ms
+[00:09:11.849] Server  LOG      ✓ Compiled in 28ms
+[00:09:20.671] Server  LOG      ✓ Compiled in 122ms
+[00:09:30.906] Server  LOG      ✓ Compiled in 38ms
+[00:09:31.138] Browser ERROR   ./components/ProductCard.tsx:34:37
+Parsing ecmascript source code failed
+  32 |       <p>{product.description}</p>
+  33 |       <p>{formatPriceUSDBase(product.priceUSD, country)}</p>
+> 34 |       <button onClick={buy} style={}>Buy Now</button>
+     |                                     ^
+  35 |     </div>
+  36 |   );
+  37 | }
+
+Expression expected
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+[00:09:31.138] Browser ERROR   ./components/ProductCard.tsx
+Code generation for chunk item errored
+An error occurred while generating the chunk item [project]/components/ProductCard.tsx [ssr] (ecmascript)
+
+Caused by:
+- CJS module can't be async.
+
+Debug info:
+- An error occurred while generating the chunk item [project]/components/ProductCard.tsx [ssr] (ecmascript)
+- Execution of <ModuleChunkItem as EcmascriptChunkItem>::content_with_async_module_info failed
+- Execution of EcmascriptChunkItemContent::new failed
+- CJS module can't be async.
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+[00:09:32.282] Server  LOG      ✓ Compiled in 21ms
+[00:09:34.015] Server  LOG      ✓ Compiled in 19ms
+[00:09:34.137] Browser ERROR   %o
+
+%s
+
+%s
+ {} The above error occurred in the <ProductCard> component. React will try to recreate this component tree from scratch using the error boundary you provided, PagesDevOverlayErrorBoundary.
+[00:09:35.238] Server  LOG      ✓ Compiled in 30ms
+[00:09:36.137] Browser ERROR   %o
+
+%s
+
+%s
+ {} The above error occurred in the <ProductCard> component. React will try to recreate this component tree from scratch using the error boundary you provided, PagesDevOverlayErrorBoundary.
+[00:09:37.156] Server  LOG      ✓ Compiled in 62ms
+[00:09:47.400] Server  LOG      ✓ Compiled in 30ms
+[00:09:48.136] Browser ERROR   %o
+
+%s
+
+%s
+ {} The above error occurred in the <ProductCard> component. React will try to recreate this component tree from scratch using the error boundary you provided, PagesDevOverlayErrorBoundary.
+[00:09:52.240] Server  LOG      ✓ Compiled in 30ms
+[00:09:53.137] Browser ERROR   %o
+
+%s
+
+%s
+ {} The above error occurred in the <ProductCard> component. React will try to recreate this component tree from scratch using the error boundary you provided, PagesDevOverlayErrorBoundary.
+[00:09:55.850] Server  LOG      ✓ Compiled in 41ms
+[00:10:12.535] Server  LOG      ✓ Compiled in 30ms
+[00:10:13.134] Browser ERROR   %o
+
+%s
+
+%s
+ {} The above error occurred in the <ProductCard> component. React will try to recreate this component tree from scratch using the error boundary you provided, PagesDevOverlayErrorBoundary.
+[00:10:17.350] Server  LOG      ✓ Compiled in 26ms
+[00:10:21.274] Server  LOG      ✓ Compiled in 17ms
+[00:10:24.168] Server  LOG      ✓ Compiled in 13ms
+[00:10:27.296] Server  LOG      ✓ Compiled in 20ms
+[00:10:29.021] Server  LOG      ✓ Compiled in 16ms
+[00:10:53.512] Server  LOG      ✓ Compiled in 27ms
+[00:10:56.019] Server  LOG      ✓ Compiled in 39ms
+[00:11:03.750] Server  LOG      ✓ Compiled in 18ms
+[00:11:13.129] Server  LOG      ✓ Compiled in 35ms
+[00:11:19.335] Server  LOG      ✓ Compiled in 27ms
+[00:11:26.637] Server  LOG      ✓ Compiled in 24ms
+[01:15:56.399] Browser ERROR   {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"productId\":\"prod_headphones\",\"country\":\"IN\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"http://localhost:4000/api/checkout/create-session","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:2469:167)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:3273:49)\n    at async buy (http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__5ddef2ae._.js:520:26)","status":500}
+[01:16:32.496] Server  ERROR    ⨯ ./components/ProductCard.tsx:3:1
+Module not found: Can't resolve 'dotenv'
+  1 | import express from "express";
+  2 | import Stripe from "stripe";
+> 3 | import dotenv from "dotenv";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | dotenv.config();
+  5 |
+  6 | const router = express.Router();
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.502] Server  ERROR    ⨯ ./components/ProductCard.tsx:3:1
+Module not found: Can't resolve 'dotenv'
+  1 | import express from "express";
+  2 | import Stripe from "stripe";
+> 3 | import dotenv from "dotenv";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | dotenv.config();
+  5 |
+  6 | const router = express.Router();
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.514] Server  ERROR    ⨯ ./components/ProductCard.tsx:3:1
+Module not found: Can't resolve 'dotenv'
+  1 | import express from "express";
+  2 | import Stripe from "stripe";
+> 3 | import dotenv from "dotenv";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | dotenv.config();
+  5 |
+  6 | const router = express.Router();
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.525] Server  ERROR    ⨯ ./components/ProductCard.tsx:3:1
+Module not found: Can't resolve 'dotenv'
+  1 | import express from "express";
+  2 | import Stripe from "stripe";
+> 3 | import dotenv from "dotenv";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | dotenv.config();
+  5 |
+  6 | const router = express.Router();
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.532] Server  ERROR    ⨯ ./components/ProductCard.tsx:1:1
+Module not found: Can't resolve 'express'
+> 1 | import express from "express";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Stripe from "stripe";
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.536] Server  ERROR    ⨯ ./components/ProductCard.tsx:1:1
+Module not found: Can't resolve 'express'
+> 1 | import express from "express";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Stripe from "stripe";
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.554] Server  ERROR    ⨯ ./components/ProductCard.tsx:1:1
+Module not found: Can't resolve 'express'
+> 1 | import express from "express";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Stripe from "stripe";
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.558] Server  ERROR    ⨯ ./components/ProductCard.tsx:1:1
+Module not found: Can't resolve 'express'
+> 1 | import express from "express";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Stripe from "stripe";
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.566] Server  ERROR    ⨯ ./components/ProductCard.tsx:2:1
+Module not found: Can't resolve 'stripe'
+  1 | import express from "express";
+> 2 | import Stripe from "stripe";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+  5 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.569] Server  ERROR    ⨯ ./components/ProductCard.tsx:2:1
+Module not found: Can't resolve 'stripe'
+  1 | import express from "express";
+> 2 | import Stripe from "stripe";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+  5 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.579] Server  ERROR    ⨯ ./components/ProductCard.tsx:2:1
+Module not found: Can't resolve 'stripe'
+  1 | import express from "express";
+> 2 | import Stripe from "stripe";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+  5 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.582] Server  ERROR    ⨯ ./components/ProductCard.tsx:2:1
+Module not found: Can't resolve 'stripe'
+  1 | import express from "express";
+> 2 | import Stripe from "stripe";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+  5 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.591] Server  ERROR    ⨯ ./components/ProductCard.tsx:3:1
+Module not found: Can't resolve 'dotenv'
+  1 | import express from "express";
+  2 | import Stripe from "stripe";
+> 3 | import dotenv from "dotenv";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | dotenv.config();
+  5 |
+  6 | const router = express.Router();
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.599] Server  ERROR    ⨯ ./components/ProductCard.tsx:3:1
+Module not found: Can't resolve 'dotenv'
+  1 | import express from "express";
+  2 | import Stripe from "stripe";
+> 3 | import dotenv from "dotenv";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | dotenv.config();
+  5 |
+  6 | const router = express.Router();
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.602] Server  ERROR    ⨯ ./components/ProductCard.tsx:3:1
+Module not found: Can't resolve 'dotenv'
+  1 | import express from "express";
+  2 | import Stripe from "stripe";
+> 3 | import dotenv from "dotenv";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | dotenv.config();
+  5 |
+  6 | const router = express.Router();
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.608] Server  ERROR    ⨯ ./components/ProductCard.tsx:3:1
+Module not found: Can't resolve 'dotenv'
+  1 | import express from "express";
+  2 | import Stripe from "stripe";
+> 3 | import dotenv from "dotenv";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | dotenv.config();
+  5 |
+  6 | const router = express.Router();
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.612] Server  ERROR    ⨯ ./components/ProductCard.tsx:1:1
+Module not found: Can't resolve 'express'
+> 1 | import express from "express";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Stripe from "stripe";
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.613] Server  ERROR    ⨯ ./components/ProductCard.tsx:1:1
+Module not found: Can't resolve 'express'
+> 1 | import express from "express";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Stripe from "stripe";
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.624] Server  ERROR    ⨯ ./components/ProductCard.tsx:1:1
+Module not found: Can't resolve 'express'
+> 1 | import express from "express";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Stripe from "stripe";
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.627] Server  ERROR    ⨯ ./components/ProductCard.tsx:1:1
+Module not found: Can't resolve 'express'
+> 1 | import express from "express";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Stripe from "stripe";
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.634] Server  ERROR    ⨯ ./components/ProductCard.tsx:2:1
+Module not found: Can't resolve 'stripe'
+  1 | import express from "express";
+> 2 | import Stripe from "stripe";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+  5 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.636] Server  ERROR    ⨯ ./components/ProductCard.tsx:2:1
+Module not found: Can't resolve 'stripe'
+  1 | import express from "express";
+> 2 | import Stripe from "stripe";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+  5 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.643] Server  ERROR    ⨯ ./components/ProductCard.tsx:2:1
+Module not found: Can't resolve 'stripe'
+  1 | import express from "express";
+> 2 | import Stripe from "stripe";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+  5 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.646] Server  ERROR    ⨯ ./components/ProductCard.tsx:2:1
+Module not found: Can't resolve 'stripe'
+  1 | import express from "express";
+> 2 | import Stripe from "stripe";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+  5 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:16:32.672] Server  LOG      ✓ Compiled in 1196ms
+[01:16:33.266] Browser ERROR   ./components/ProductCard.tsx:3:1
+Module not found: Can't resolve 'dotenv'
+  1 | import express from "express";
+  2 | import Stripe from "stripe";
+> 3 | import dotenv from "dotenv";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | dotenv.config();
+  5 |
+  6 | const router = express.Router();
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:16:33.266] Browser ERROR   ./components/ProductCard.tsx:1:1
+Module not found: Can't resolve 'express'
+> 1 | import express from "express";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 | import Stripe from "stripe";
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:16:33.266] Browser ERROR   ./components/ProductCard.tsx:2:1
+Module not found: Can't resolve 'stripe'
+  1 | import express from "express";
+> 2 | import Stripe from "stripe";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  3 | import dotenv from "dotenv";
+  4 | dotenv.config();
+  5 |
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:16:34.247] Server  LOG      ✓ Compiled in 135ms
+[01:17:21.690] Server  ERROR    ⨯ ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:21.696] Server  ERROR    ⨯ ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:21.708] Server  ERROR    ⨯ ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:21.725] Server  ERROR    ⨯ ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:21.740] Server  ERROR    ⨯ ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:21.745] Server  ERROR    ⨯ ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:21.748] Server  ERROR    ⨯ ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:21.763] Server  ERROR    ⨯ ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:21.781] Server  LOG      ✓ Compiled in 328ms
+[01:17:22.141] Browser ERROR   ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:22.141] Browser ERROR   ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:22.141] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:22.141] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:24.560] Server  ERROR    ⨯ ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:24.567] Server  ERROR    ⨯ ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:24.570] Server  ERROR    ⨯ ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:24.578] Server  ERROR    ⨯ ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:25.134] Browser ERROR   ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:25.134] Browser ERROR   ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:25.134] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:25.134] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:29.764] Server  ERROR    ⨯ ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:29.765] Server  ERROR    ⨯ ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:29.766] Server  ERROR    ⨯ ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:29.773] Server  ERROR    ⨯ ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:29.776] Server  ERROR    ⨯ ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:29.779] Server  ERROR    ⨯ ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:29.791] Server  WARN     ⚠ ./components/ProductCard.tsx
+Specified module format (EcmaScript Modules) is not matching the module format of the source code (CommonJs)
+The EcmaScript module format was specified in the package.json that is affecting this source file or by using an special extension, but it looks like that CommonJs syntax is used in the source code.
+Exports made by CommonJs syntax will lead to a runtime error, since the module is in EcmaScript mode. Either change the "type" field in the package.json or replace CommonJs syntax with EcmaScript import/export syntax in the source file.
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+
+[01:17:29.807] Server  WARN     ⚠ ./components/ProductCard.tsx
+Specified module format (EcmaScript Modules) is not matching the module format of the source code (CommonJs)
+The EcmaScript module format was specified in the package.json that is affecting this source file or by using an special extension, but it looks like that CommonJs syntax is used in the source code.
+Exports made by CommonJs syntax will lead to a runtime error, since the module is in EcmaScript mode. Either change the "type" field in the package.json or replace CommonJs syntax with EcmaScript import/export syntax in the source file.
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+
+[01:17:29.980] Browser ERROR   ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:29.981] Browser ERROR   ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:29.981] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:29.981] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:29.981] Browser ERROR   ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:29.981] Browser ERROR   ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:29.981] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:29.981] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:31.906] Server  WARN     ⚠ ./components/ProductCard.tsx
+Specified module format (EcmaScript Modules) is not matching the module format of the source code (CommonJs)
+The EcmaScript module format was specified in the package.json that is affecting this source file or by using an special extension, but it looks like that CommonJs syntax is used in the source code.
+Exports made by CommonJs syntax will lead to a runtime error, since the module is in EcmaScript mode. Either change the "type" field in the package.json or replace CommonJs syntax with EcmaScript import/export syntax in the source file.
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+
+[01:17:31.929] Browser ERROR   uncaughtError: Error: ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[01:17:32.146] Browser ERROR   ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:32.146] Browser ERROR   ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:32.146] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:32.146] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:32.146] Browser ERROR   ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:32.146] Browser ERROR   ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:32.146] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:32.146] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:33.141] Browser ERROR   ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:33.141] Browser ERROR   ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:33.141] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:33.141] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:34.553] Server  LOG      ✓ Compiled in 75ms
+[01:17:35.142] Browser ERROR   ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:35.142] Browser ERROR   ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:35.142] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:35.142] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:44.938] Server  LOG      ✓ Compiled in 21ms
+[01:17:45.144] Browser ERROR   ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:45.145] Browser ERROR   ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:45.145] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:45.145] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:48.014] Server  LOG      ✓ Compiled in 21ms
+[01:17:48.138] Browser ERROR   ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:48.138] Browser ERROR   ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:48.138] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:48.138] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:51.133] Server  LOG      ✓ Compiled in 13ms
+[01:17:52.132] Browser ERROR   ./components/ProductCard.tsx:1:17
+Module not found: Can't resolve 'express'
+> 1 | const express = require("express");
+    |                 ^^^^^^^^^^^^^^^^^^
+  2 | const Stripe = require("stripe");
+  3 | const router = express.Router();
+  4 |
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:52.132] Browser ERROR   ./components/ProductCard.tsx:2:16
+Module not found: Can't resolve 'stripe'
+  1 | const express = require("express");
+> 2 | const Stripe = require("stripe");
+    |                ^^^^^^^^^^^^^^^^^
+  3 | const router = express.Router();
+  4 |
+  5 | const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
+
+Import traces:
+  Browser:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+  SSR:
+    ./components/ProductCard.tsx
+    ./pages/index.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+[01:17:52.132] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [client] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:52.132] Browser ERROR   ./pages/index.tsx:3:1
+Export default doesn't exist in target module
+  1 | import { useEffect, useState } from 'react';
+  2 | import axios from 'axios';
+> 3 | import ProductCard from '../components/ProductCard';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | import CurrencySelector from '../components/CurrencySelector';
+  5 | import { CountryCode } from '../lib/currency';
+  6 |
+
+The export default was not found in module [project]/components/ProductCard.tsx [ssr] (ecmascript).
+The module has no exports at all.
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+[01:17:56.753] Server  LOG      ✓ Compiled in 4.2s
+[01:17:56.754] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:17:57.753] Server  LOG      ✓ Compiled in 18ms
+[01:18:03.699] Browser ERROR   {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"productId\":\"prod_headphones\",\"country\":\"IN\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"http://localhost:4000/api/checkout/create-session","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:2469:167)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:3273:49)\n    at async buy (http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__5ddef2ae._.js:520:26)","status":500}
+[01:20:20.613] Browser ERROR   {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"productId\":\"prod_stand\",\"country\":\"US\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"http://localhost:4000/api/checkout/create-session","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:2469:167)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:3273:49)\n    at async buy (http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__5ddef2ae._.js:520:26)","status":500}
+[01:22:10.529] Browser ERROR   {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"productId\":\"prod_headphones\",\"country\":\"US\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"http://localhost:4000/api/checkout/create-session","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:2469:167)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:3273:49)\n    at async buy (http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__5ddef2ae._.js:520:26)","status":500}
+[01:26:38.093] Browser ERROR   {"code":"ERR_BAD_RESPONSE","config":{"adapter":["xhr","http","fetch"],"allowAbsoluteUrls":true,"data":"{\"productId\":\"prod_headphones\",\"country\":\"IN\"}","env":{},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json"},"maxBodyLength":-1,"maxContentLength":-1,"method":"post","timeout":0,"transformRequest":[null],"transformResponse":[null],"transitional":{"clarifyTimeoutError":false,"forcedJSONParsing":true,"silentJSONParsing":true},"url":"http://localhost:4000/api/checkout/create-session","xsrfCookieName":"XSRF-TOKEN","xsrfHeaderName":"X-XSRF-TOKEN"},"message":"Request failed with status code 500","name":"AxiosError","stack":"AxiosError: Request failed with status code 500\n    at settle (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:1954:16)\n    at XMLHttpRequest.onloadend (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:2469:167)\n    at Axios.request (http://localhost:3000/_next/static/chunks/node_modules_axios_lib_2c8bf6cb._.js:3273:49)\n    at async buy (http://localhost:3000/_next/static/chunks/%5Broot-of-the-server%5D__5ddef2ae._.js:520:26)","status":500}
